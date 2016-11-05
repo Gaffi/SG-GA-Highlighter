@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         SteamGifts Library Checker
+// @name         SteamGifts Giveaway Highlighter
 // @namespace     https://github.com/Gaffi/SG-GA-Highlighter
 // @version      0.01
 // @description  Highlights SG site for easier management.
