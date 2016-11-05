@@ -7,16 +7,14 @@
 // icon
 // @downloadURL   https://github.com/Gaffi/SG-GA-Highlighter/raw/master/SG-GA-Highlighter.user.js
 // @updateURL     https://github.com/Gaffi/SG-GA-Highlighter/raw/master/SG-GA-Highlighter.meta.js
-// @match        https://www.steamgifts.com/
+// @match        www.steamgifts.com/*
 // @grant        GM_log
-// @connect		 www.steamgifts.com
 // ==/UserScript==
 
-
 var i, j;
-if (window.location.href.match(".steamgifts.com/") !== null &&
-	window.location.href.match(".steamgifts.com/discussion") === null &&
-	window.location.href.match(".steamgifts.com/account*") === null) {
+if (window.location.href.indexOf("steamgifts.com") > 0 &&
+	window.location.href.indexOf("discussion") <= 0 &&
+	window.location.href.indexOf("account*") <= 0) {
 
 	var entries = getElementsByClassName(document, "giveaway__summary");
 	var heading_entries = getElementsByClassName(document, "giveaway__heading__thin");
@@ -42,6 +40,7 @@ if (window.location.href.match(".steamgifts.com/") !== null &&
 		}
 	}
 
+	GM_log('Removing featured item');
 	var featured = document.getElementsByClassName('featured__container')[0];
 	var featuredChild = featured.getElementsByClassName('featured__outer-wrap featured__outer-wrap--home');
 	if (featuredChild.length > 0) {
