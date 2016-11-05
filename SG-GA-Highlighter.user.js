@@ -1,13 +1,12 @@
 // ==UserScript==
 // @name         SteamGifts Library Checker
-// namespace     https://github.com/Gaffi/SG-WL-Inventory
+// @namespace     https://github.com/Gaffi/SG-GA-Highlighter
 // @version      0.01
 // @description  Highlights SG site for easier management.
 // @author       Gaffi
 // icon
-// downloadURL   https://github.com/Gaffi/SG-WL-Inventory/raw/master/SG-WL-Inventory.user.js
-// updateURL     https://github.com/Gaffi/SG-WL-Inventory/raw/master/SG-WL-Inventory.meta.js
-// supportURL    https://www.steamgifts.com/discussion/HipoH/
+// @downloadURL   https://github.com/Gaffi/SG-GA-Highlighter/raw/master/SG-GA-Highlighter.user.js
+// @updateURL     https://github.com/Gaffi/SG-GA-Highlighter/raw/master/SG-GA-Highlighter.meta.js
 // @match        https://www.steamgifts.com/
 // @grant        GM_log
 // @connect		 www.steamgifts.com
