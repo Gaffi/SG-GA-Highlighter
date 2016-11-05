@@ -42,7 +42,7 @@ if (window.location.href.match(".steamgifts.com/") !== null &&
 	}
 
 	var featured = document.getElementsByClassName('featured__container')[0];
-	var featuredChild = featured.getElementsByClassName('featured__outer-wrap featured__outer-wrap--home');
+	var featuredChild = featured.getElementsByClassName('featured__outer-wrap featured__outer-wrap--home')[0];
 	if (featuredChild.length > 0) {
 		featured.parentElement.removeChild(featured);
 	}
