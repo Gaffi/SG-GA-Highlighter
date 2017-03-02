@@ -155,6 +155,10 @@ if (window.location.href.indexOf("steamgifts.com") > 0 &&
 						node_parent = getElementsByClassName(lvl_entry.parentNode.parentNode,"giveaway__heading")[0];
 						node_parent.style='background-color:' + l_color[chk_lvl];
 						break;
+					} else {
+						lvl_entry = entries[e].childNodes[i].childNodes[j];
+						node_parent = getElementsByClassName(lvl_entry.parentNode.parentNode,"giveaway__heading")[0];
+						node_parent.style='background-color:#CCCCCC';						
 					}
 				}
 			}
