@@ -7,7 +7,8 @@
 // icon
 // @downloadURL   https://github.com/Gaffi/SG-GA-Highlighter/raw/master/SG-GA-Highlighter.user.js
 // @updateURL     https://github.com/Gaffi/SG-GA-Highlighter/raw/master/SG-GA-Highlighter.meta.js
-// @match        www.steamgifts.com/*
+// @match        www.steamgifts.com
+// @match        www.steamgifts.com/giveaways/search*
 // @grant        GM_log
 // ==/UserScript==
 
