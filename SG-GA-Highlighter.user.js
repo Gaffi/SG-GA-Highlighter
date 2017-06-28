@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SteamGifts Giveaway Highlighter
 // @namespace     https://github.com/Gaffi/SG-GA-Highlighter
-// @version      0.01
+// @version      0.02
 // @description  Highlights SG site for easier management.
 // @author       Gaffi
 // icon
@@ -174,7 +174,7 @@ if (window.location.href.indexOf("steamgifts.com") > 0 &&
 		start = entry_txt.indexOf('<span>') + 6;
 		stop = entry_txt.indexOf('</span>');
 		if (odds === 0 || isNaN(odds)) {
-			entry_txt = entry_txt.slice(0, start) + '<font color=#FF00FF>*****</font>' + entry_txt.slice(stop);
+			entry_txt = entry_txt.slice(0, start) + '<font color=#FF00FF>0</font>' + entry_txt.slice(stop);
 		}
 		else {
 			entry_txt = entry_txt.slice(0, start) + '<font color=' + l_color[8-getBucket(odds)] + '>' + odds_txt + '</font>' + entry_txt.slice(stop);
